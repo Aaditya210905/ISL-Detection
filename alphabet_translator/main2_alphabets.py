@@ -32,7 +32,7 @@ def process_input(a, arr, translator, result_label):
         # Display each alphabet letter
         for i in range(len(a)):
             if a[i] in arr:
-                ImageAddress = 'letters/' + a[i] + '.jpg'
+                ImageAddress = '../shared/letters/' + a[i] + '.jpg'
                 ImageItself = Image.open(ImageAddress)
                 ImageNumpyFormat = np.asarray(ImageItself)
                 plt.imshow(ImageNumpyFormat)

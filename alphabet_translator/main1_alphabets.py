@@ -33,7 +33,7 @@ def func():
                 # Display each letter
                 for i in range(len(a)):
                     if(a[i].lower() in arr):
-                        ImageAddress = 'letters/' + a[i].lower() + '.jpg'
+                        ImageAddress = '../shared/letters/' + a[i].lower() + '.jpg'
                         ImageItself = Image.open(ImageAddress)
                         ImageNumpyFormat = np.asarray(ImageItself)
                         plt.imshow(ImageNumpyFormat)

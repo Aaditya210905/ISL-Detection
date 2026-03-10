@@ -4,7 +4,7 @@ import numpy as np
 import mediapipe as mp
 from my_functions import image_process, keypoint_extraction
 
-DATASET_PATH = "dataset"
+DATASET_PATH = "../shared/dataset"
 
 X, y = [], []
 
